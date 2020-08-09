@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Kofound me</title>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand text-primary font-weight-bolder" href="#">
+                    <!-- logo link -->
+                    <img src="data:image/png;base64,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"
+                        width="50" height="50" alt="" loading="lazy"> <span>KoFoundMe</span> </a>
+
+
+
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      !-- <span class="navbar-toggler-icon"></span> 
+      <span class="bg-primary">MENU  <i class="fas fa-bars"></i></span>
+    </button> -->
+
+
+                <button
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">About KofoundME </a>
+                            <!-- <span class="sr-only">(current)</span> -->
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it Works</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="btn-style ">
+                        <button class="btn btn-outline-primary btn-md my-2 my-sm-0 mr-2" type="submit">login</button>
+
+                        <button class="btn  my-2 my-sm-0 btn-lg btn-primary  ml-2" type="submit">Signup</button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-page container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="main-page-left col-md-5 col-sm-12">
+                    <h3 class="">
+                        Find a technical and non-technical <br><span class="text-primary">co-founder</span> for your
+                        startup, idea or existing business
+                    </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum eius assumenda
+                        cupiditate corrupti similique expedita est tenetur necessitatibus distinctio!
+                    </p>
+
+                    <button class="btn btn-lg btn-primary text-white w-40 my-btn mt-3 mb-3"> <a
+                            href="./kofoundme.html">Get
+                            Started</a></button>
+                </div>
+
+                <div class="main-page-right col-md-7 col-sm-12  ">
+                    <div class="side-pic">
+                        <img class="pict-1"
+                            src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
+                        <img class="pict-2"
+                            src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
+                    </div>
+                    <div class="clr"></div>
+                    <div>
+                        <img class="final-img pt-3"
+                            src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid push">
+        <div class="row">
+            <div class="col-md-5 ">
+                <img class="picture"
+                    src="https://images.pexels.com/photos/4861309/pexels-photo-4861309.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            </div>
+            <div class="col-md-7 ">
+                <h5 class="text-primary pt-5 ">
+                    About us
+                </h5>
+
+                <h3 class="text-primary pt-1">
+                    The first <br> of it's kind in Africa
+                </h3>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis aut sed, illo quaerat perspiciatis
+                    quas at ea distinctio adipisci ex error, dignissimos voluptas expedita, non eveniet ipsa minima
+                    laudantium provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui quod quia saepe. A hic commodi aperiam nisi maxime dolores quaerat distinctio voluptatem error. Obcaecati quibusdam impedit tempore corrupti blanditiis pariatur qui illum explicabo quo modi, architecto culpa consequuntur! Doloremque?
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

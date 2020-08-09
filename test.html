@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>ko-found me</title>
+         <link rel="stylesheet" href="styles.css"> 
+    <title>Document</title>
 </head>
-
 <body>
+
+    <!-- navbar section -->
     <header>
-        <!-- NAv BAr -->
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <a class="navbar-brand text-primary font-weight-bolder" href="#">
                     <!-- logo link -->
                     <img src="data:image/png;base64,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"
-                        width="50" height="50" alt="" loading="lazy"> <span >KoFoundMe</span> </a>
+                        width="50" height="50" alt="" loading="lazy"> <span>KoFoundMe</span> </a>
 
 
 
 
                 <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          !-- <span class="navbar-toggler-icon"></span> 
-          <span class="bg-primary">MENU  <i class="fas fa-bars"></i></span>
-        </button> -->
+      !-- <span class="navbar-toggler-icon"></span> 
+      <span class="bg-primary">MENU  <i class="fas fa-bars"></i></span>
+    </button> -->
 
 
                 <button
@@ -65,63 +64,27 @@
                         <button class="btn  my-2 my-sm-0 btn-lg btn-primary  ml-2" type="submit">Signup</button>
 
                     </div>
-
-    
-
                 </div>
             </div>
         </nav>
-<!-- end of nav. -->
     </header>
 
-    <!-- https://www.freepik.com/free-vector/website-creator-concept-illustration_9233826.htm -->
 
-<!-- <div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXpvKcmVN60llrAlyy8O0SJaYElTU6sZR4gw&usqp=CAU" alt="">
-</div> -->
-
-    <!-- END OF NAV BAR -->
-
-    <!-- mainbody -->
-    <div class="container-fluid main-body">
+    <div class="container-fluid">
         <div class="container">
             <div class="row">
-            <div class="main-body-left col-md-6">
-                <h2 class="font-weight-bold pb-3">Find a <span class="text-primary">co-founder</span> and  <br> <span class="text-primary"> advisor</span> for your startups</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas sunt voluptatibus, aut consequatur velit ullam accusantium quasi debitis nesciunt.
-                </p>
-
-                <button class="btn btn-lg btn-primary text-white w-40 my-btn mt-3 mb-3"> <a href="./kofoundme.html">Get
-                        Started</a></button>
-
-
-            </div>
-
-            <div class="main-body-right col-md-6 ">
-                <img  src="https://image.freepik.com/free-vector/website-creator-concept-illustration_114360-2766.jpg"
-                    alt="" class="pic-1">
-
-            </div>
+                <div class="left col-md-5 col-sm-12">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam modi neque dolorem veritatis voluptatibus mollitia qui soluta nisi, unde ratione dolorum quia consequatur quasi molestiae, recusandae exercitationem aperiam corporis saepe accusamus natus voluptatum, veniam vel delectus. Ipsa hic quidem accusantium corporis vel necessitatibus in? Quasi quod impedit corporis alias ut, corrupti dicta nisi voluptatem qui enim quidem officia quia laudantium temporibus ipsum unde eum debitis odit molestias nesciunt? Omnis dolor quam molestias blanditiis magni aliquid nulla, quibusdam, ut optio quod reiciendis debitis, architecto numquam nisi voluptatum voluptatibus. Dicta ullam voluptas voluptates odit temporibus illum voluptatum, aliquam facere sunt. Molestias, animi.
+                </div>
+                <div class="right col-lg-3 col-md-3 col-sm-12">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga rerum veniam, debitis id quidem perferendis sunt. Dolorem dolorum animi nobis iure sapiente molestiae totam harum architecto aspernatur quo neque repellat, voluptas voluptate. Velit eius, fuga repellendus dignissimos ipsum atque ipsa dolore unde asperiores nam. Architecto debitis culpa nam, totam accusamus laudantium! Soluta eligendi odit quisquam, placeat culpa minus ab distinctio, hic amet qui veniam explicabo libero praesentium. Enim, deserunt. Minima ex voluptatum amet distinctio maiores doloribus libero labore corrupti eaque nihil nam rerum repudiandae autem quidem odio beatae, recusandae praesentium est dignissimos sunt impedit et voluptates. Amet aliquid facilis fuga.
+                </div>
+                <div class="right col-lg-4 col-md-4 col-sm-12">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga rerum veniam, debitis id quidem perferendis sunt. Dolorem dolorum animi nobis iure sapiente molestiae totam harum architecto aspernatur quo neque repellat, voluptas voluptate. Velit eius, fuga repellendus dignissimos ipsum atque ipsa dolore unde asperiores nam. Architecto debitis culpa nam, totam accusamus laudantium! Soluta eligendi odit quisquam, placeat culpa minus ab distinctio, hic amet qui veniam explicabo libero praesentium. Enim, deserunt. Minima ex voluptatum amet distinctio maiores doloribus libero labore corrupti eaque nihil nam rerum repudiandae autem quidem odio beatae, recusandae praesentium est dignissimos sunt impedit et voluptates. Amet aliquid facilis fuga.
+                </div>
             </div>
         </div>
     </div>
-
+    
 </body>
-
-<!-- https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 -->
-
-
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-</script>
-
 </html>

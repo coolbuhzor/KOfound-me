@@ -1,10 +1,17 @@
 /* STYLES */
 
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+/* .container-fluid {
+    padding: 3% 3% 7%;
+}  */
+
 /*  */
 
 /* LANDING PAGE CSS */
@@ -20,21 +27,108 @@ nav {
 
 /* MAIN BODY */
 
+.pic-1 {
+    height: 80%;
+    padding-top: 0;
+}
+
 .main-body {
-    margin-top: 6%;
+
     margin-bottom: 10%;
 }
 
-
-.main-body-right img {
-border-radius: 5px;
-margin: auto;
-width: 100%;
+.main-body-left {
+    margin-top: 6%;
 }
 
- 
+.main-body-right img {
+    border-radius: 5px;
+    margin: auto;
+    width: 100%;
+    margin-top: 3%;
+}
+
+
 button a {
     text-decoration: none !important;
     color: white !important;
+
+}
+
+
+/* SECOND PAGE */
+/* MAIN PAGE */
+
+.main-page {
+    margin-bottom: 70px;
+}
+
+.main-page-left {
+    margin-top: 5%;
+    margin-left: 0;
+}
+
+.mainpage-right {
+    margin-top: 2%;
+    margin-right: 0;
+    width: 100%;
+}
+
+
+.pict-1 {
+    width: 250px;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.pict-2 {
+    width: 350px;
+    height: 300px;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+.final-img {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+}
+
+
+/* .push {
+    pa
+} */
+
+.picture {
+    width: 350px;
+    height: 300px;
+     transform: rotate(25deg); 
     
 }
+
+
+/* m0bile query */
+
+ @media only screen and (max-width: 568px) {
+    .pict-1 {
+        padding-top: 10%;
+        width: 45%;
+        float: left;
+    }
+
+    .pict-2 {
+        width: 45%;
+        height: 200px;
+        float: right;
+    }
+
+    .clr {
+        clear: both;
+    }
+
+    .picture {
+        width: 80%;
+    }
+} 
+
+
