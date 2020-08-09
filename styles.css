@@ -34,7 +34,7 @@ nav {
 
 .main-body {
 
-    margin-bottom: 10%;
+    margin-bottom: 10px;
 }
 
 .main-body-left {
@@ -78,14 +78,14 @@ button a {
 .pict-1 {
     width: 250px;
     border-radius: 5px;
-    padding: 2%;
+    
 }
 
 .pict-2 {
     width: 350px;
     height: 300px;
     border-radius: 5%;
-    padding: 2%;
+
 }
 
 .final-img {
