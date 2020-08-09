@@ -1,0 +1,40 @@
+/* STYLES */
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+/*  */
+
+/* LANDING PAGE CSS */
+
+/* NAV BAR */
+nav {
+    padding-top: 2% !important;
+}
+
+.brandname {
+    font-weight: bold;
+}
+
+/* MAIN BODY */
+
+.main-body {
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+
+
+.main-body-right img {
+border-radius: 5px;
+margin: auto;
+width: 100%;
+}
+
+ 
+button a {
+    text-decoration: none !important;
+    color: white !important;
+    
+}
